@@ -27,7 +27,9 @@ export const ProductCreateValidationSchema = z.object({
 })
 
 export const ProductUpdateValidationSchema =
-  ProductCreateValidationSchema.partial()
+  ProductCreateValidationSchema.partial().extend({
+    _id: z.string(),
+  })
 
 export const ProductsUpdateValidationSchema = z.array(
   z.object({

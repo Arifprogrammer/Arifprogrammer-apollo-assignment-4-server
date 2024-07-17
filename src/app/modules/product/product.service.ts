@@ -1,4 +1,3 @@
-import { ObjectId } from 'mongodb'
 import { TProduct } from './product.interface'
 import { Product } from './product.model'
 
@@ -22,7 +21,7 @@ async function getAllProductsFromDB(limit: string) {
 
 async function getSingleProductFromDB(productId: string) {
   const result = await Product.findById({
-    _id: new ObjectId(productId),
+    _id: productId,
   })
 
   if (result) {
@@ -38,7 +37,7 @@ async function updateProductInDB(
 ) {
   const result = await Product.findOneAndUpdate(
     {
-      _id: new ObjectId(productId),
+      _id: productId,
     },
     {
       ...product,
@@ -77,7 +76,7 @@ async function updateProductsInDB(
 
 async function deleteProductFromDB(productId: string) {
   const result = await Product.deleteOne({
-    _id: new ObjectId(productId),
+    _id: productId,
   })
 
   if (result.deletedCount) {
