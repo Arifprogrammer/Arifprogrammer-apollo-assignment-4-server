@@ -19,4 +19,4 @@ then go to: `http://localhost:5000/`
 
 ## Live
 
-[Link](https://ecommerce-mongoose-zod.vercel.app/)
+[Link](mechanical-keyboard-shop-server-dun.vercel.app/)
