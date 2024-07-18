@@ -14,10 +14,9 @@ Mechanical Keyboard Shop project require **Node** and **npm** (Npm come out of t
 
 ```html
 git clone
-https://github.com/Arifprogrammer/Arifprogrammer-apollo-assignment-4-server.git
-// clone the project first npm i // run the command on the root of the project
-npm run dev // run the command on the root of the project to start the project
-locally
+https://github.com/Arifprogrammer/Arifprogrammer-apollo-assignment-4-server.git // clone the project first
+npm i // run the command on the root of the project
+npm run dev // run the command on the root of the project to start the project locally
 ```
 
 then go to: `http://localhost:5000/`
